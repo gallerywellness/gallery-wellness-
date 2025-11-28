@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery Wellness</title>
+  <style>
+    :root{
+      --brand:#2a3c57;
+      --accent:#7fb77e;
+      --muted:#666;
+      --card:#fff;
+      --bg:#f6f7f9;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#222}
+    header{background:var(--brand);color:white;padding:18px 16px;text-align:center}
+    header h1{margin:0;font-size:24px}
+    header p{margin:6px 0 0;color:#d4e0ff}
+    nav{display:flex;gap:12px;justify-content:center;padding:10px;background:#1f2c3d}
+    nav a{color:white;text-decoration:none;font-weight:600}
+    .container{max-width:1100px;margin:32px auto;padding:0 16px}
+    .hero{
+      display:flex;flex-direction:column;align-items:center;text-align:center;
+      padding:40px 16px;border-radius:10px;background:linear-gradient(180deg,white, #fbfdfe);
+      box-shadow:0 6px 18px rgba(10,20,30,0.06);
+    }
+    .hero h2{margin:0 0 8px;font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .actions{margin-top:18px}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-right:8px}
+    .btn.secondary{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+    .grid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:10px;width:280px;box-shadow:0 6px 12px rgba(15,25,35,0.04);text-align:center}
+    .card h3{margin:8px 0}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+    .contact{background:linear-gradient(180deg,#fff,#f9fffa);padding:20px;border-radius:10px}
+    footer{margin-top:48px;padding:24px;text-align:center;background:var(--brand);color:#fff}
+    @media(max-width:800px){
+      .two-col{grid-template-columns:1fr}
+      nav{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gallery Wellness</h1>
+  <p>Massage • Acupuncture • Cupping • Hot Stone</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#team">Team</a>
+  <a href="#contact">Contact</a>
+  <a href="https://your-jane-booking-link.example" target="_blank" rel="noopener" class="btn" style="margin-left:12px">Book Now</a>
+</nav>
+
+<main class="container">
+  <section class="hero">
+    <h2>Professional Care for Your Body & Mind</h2>
+    <p>Registered RMTs and Registered Acupuncturists providing personalized treatment plans.</p>
+    <div class="actions">
+      <a class="btn" href="https://your-jane-booking-link.example" target="_blank">Book Appointment</a>
+      <a class="btn secondary" href="#contact">Contact Us</a>
+    </div>
+
+    <div class="grid" style="margin-top:24px">
+      <div class="card">
+        <h3>Couple Massage</h3>
+        <p>Free hot stone, essential oil & parking for couple bookings.</p>
+      </div>
+      <div class="card">
+        <h3>Acupuncture</h3>
+        <p>Personalized acupuncture & needle-free options.</p>
+      </div>
+      <div class="card">
+        <h3>Cupping & Gua Sha</h3>
+        <p>Improve circulation and relieve tension.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="two-col">
+    <div>
+      <h2>Our Services</h2>
+      <p>We offer clinical treatments tailored to your condition: therapeutic massage, acupuncture, cupping, gua sha, hot stone.</p>
+      <ul>
+        <li>Initial acupuncture — 60–75 min</li>
+        <li>Follow-up acupuncture — 45–60 min</li>
+        <li>RMT therapeutic massage — 30/45/60 min</li>
+      </ul>
+    </div>
+    <aside class="contact" id="contact">
+      <h2>Contact & Location</h2>
+      <p>Address: Your clinic address here</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: <a href="mailto:info@gallerywellness.example">info@gallerywellness.example</a></p>
+      <!-- Map placeholder: replace src with your Google Maps embed -->
+      <div style="margin-top:12px">
+        <iframe style="width:100%;height:180px;border:0" src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy"></iframe>
+      </div>
+    </aside>
+  </section>
+
+  <section id="team" style="margin-top:36px">
+    <h2>Meet Our Team</h2>
+    <div class="grid">
+      <div class="card"><h3>Mr. George Wang — RMT</h3><p>Registered Massage Therapist — chronic pain & rehab</p></div>
+      <div class="card"><h3>[Your Acupuncturist]</h3><p>Registered Acupuncturist — gentle & clinical care</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © Gallery Wellness — Professional Care • Book: <a href="https://your-jane-booking-link.example" style="color:inherit;text-decoration:underline">Jane</a>
+</footer>
+
+</body>
+</html>
